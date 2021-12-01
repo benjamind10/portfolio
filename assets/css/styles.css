@@ -70,6 +70,10 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
+header .logo {
+  padding-right: 15px;
+}
+
 /* Hero Section */
 .hero {
   height: 400px;
@@ -80,12 +84,13 @@ header nav ul li a:hover {
   display: flex;
   justify-content: right;
   flex-wrap: wrap;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  text-align: right;
 }
 
 .hero-cta {
   width: 35%;
-  text-align: right;
+  /* text-align: right; */
   align-self: flex-end;
   margin: 3.5%;
   color: #fff;
