@@ -13,8 +13,8 @@
 
 /* Element Selectors */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  color: var(--tertiary-color);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Header Section */
@@ -77,4 +77,48 @@ header nav ul li a:hover {
   background-image: url('../images/hero_banner.jpeg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  align-self: flex-end;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+/* About me section */
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-me-text {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
+  padding-right: 15px;
+  font-size: 50px;
+  border-right: 3px solid var(--tertiary-color);
+}
+
+.about-me-text h1 {
+  margin-right: 10px;
+}
+
+.about-me-body {
+  flex: 3;
+  flex-grow: 6;
+}
+
+.about-me-body p {
+  padding-left: 10px;
+  font-size: 20px;
 }
