@@ -76,7 +76,7 @@ header .logo {
 
 /* Hero Section */
 .hero {
-  height: 400px;
+  height: 300px;
   margin-bottom: 25px;
   background-image: url('../images/hero_banner.jpeg');
   background-size: cover;
@@ -84,13 +84,11 @@ header .logo {
   display: flex;
   justify-content: right;
   flex-wrap: wrap;
-  /* align-items: flex-start; */
   text-align: right;
 }
 
 .hero-cta {
   width: 35%;
-  /* text-align: right; */
   align-self: flex-end;
   margin: 3.5%;
   color: #fff;
@@ -103,15 +101,18 @@ header .logo {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 .about-me-text {
   flex: 1;
-  text-align: right;
-  margin-right: 20px;
-  padding-right: 15px;
+  /* flex-direction: column; */
+  /* text-align: right; */
+  margin-bottom: 20px;
+  padding-bottom: 15px;
   font-size: 50px;
-  border-right: 3px solid var(--tertiary-color);
+  border-bottom: 3px solid var(--tertiary-color);
+  align-self: center;
 }
 
 .about-me-text h1 {
@@ -124,6 +125,14 @@ header .logo {
 }
 
 .about-me-body p {
-  padding-left: 10px;
+  flex: 3;
+  flex-grow: 6;
+  padding-right: 140px;
+  padding-left: 140px;
   font-size: 20px;
+  text-align: center;
+}
+
+.about-me img {
+  align-self: center;
 }
