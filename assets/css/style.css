@@ -156,18 +156,48 @@ body {
 
 .work h3 {
   color: var(--primary-color);
+  text-align: center;
 }
 
-.card {
+/* Card Section */
+.work img {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+  margin: auto;
+  width: 50%;
+}
+
+.column {
+  display: flex;
+  margin: auto;
+  padding-left: 200px;
+  flex-wrap: wrap;
+}
+
+.column img {
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  max-width: 25vw;
+}
+
+/* .card {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1000px;
   align-content: space-around;
 }
 
 .card .project1 {
-  flex-grow: 5;
+  display: flex;
 }
 
 .card img {
@@ -175,4 +205,29 @@ body {
   border: 3px solid #000;
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
   max-width: 25vw;
+} */
+
+/* FOOTER STYLES START */
+footer {
+  background: #46cff9;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--secondary-color);
 }
