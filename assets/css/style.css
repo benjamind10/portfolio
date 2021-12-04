@@ -1,7 +1,8 @@
 :root {
-  --primary-color: white;
+  --primary-color: #d9dcd6;
   --secondary-color: black;
   --tertiary-color: #0a5386;
+  --fourth-color: #c32571;
 }
 
 /* Universal Selector */
@@ -15,6 +16,10 @@
 body {
   color: var(--tertiary-color);
   font-family: Helvetica, Arial, sans-serif;
+}
+
+section {
+  padding: 20px;
 }
 
 /* Grouped CSS */
@@ -33,12 +38,12 @@ body {
 
 /* Navbar Section */
 .nav-bar {
-  padding: 20px;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   justify-content: space-between;
   position: sticky;
   position: -webkit-sticky;
+  padding: 5px;
   top: 0;
   background-image: url('../images/hero_banner.jpeg');
   background-size: cover;
@@ -49,9 +54,8 @@ body {
 .nav-bar h1 {
   font-weight: bold;
   margin: 0;
-  font-size: 36px;
+  font-size: 2vw;
   color: var(--primary-color);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .nav-bar a {
@@ -72,26 +76,24 @@ body {
 .nav-bar nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 1vw;
   text-decoration: underline;
 }
 
 .nav-bar nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--fourth-color);
   border-radius: 15px;
   text-shadow: none;
 }
 
 .nav-bar .logo {
   padding-right: 15px;
+  width: 3vw;
 }
 
 /* Hero Section */
 .hero {
   height: 300px;
-  margin-bottom: 25px;
   background-image: url('../images/hero_banner.jpeg');
   background-size: cover;
   background-position: center;
@@ -103,9 +105,10 @@ body {
   width: 35%;
   align-self: flex-end;
   margin: 3.5%;
-  color: #fff;
+  color: var(--primary-color);
   font-size: 25px;
   line-height: 1.2;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* About me section */
@@ -117,12 +120,16 @@ body {
   scroll-margin-top: 5rem;
 }
 
+.about-me {
+  background-color: var(--primary-color);
+}
+
 .about-me-text,
 .work-text,
 .contact-me-text {
   flex: 1;
   margin-bottom: 15px;
-  font-size: 50px;
+  font-size: 2vw;
   border-bottom: 3px solid var(--tertiary-color);
   align-self: center;
 }
@@ -132,16 +139,14 @@ body {
 }
 
 .about-me-body {
-  flex: 3;
-  flex-grow: 6;
-  padding-right: 140px;
-  padding-left: 140px;
+  padding: 0 140px;
   font-size: 20px;
   text-align: center;
 }
 
 .about-me img {
   align-self: center;
+  width: 15vw;
 }
 
 /* Work Section */
@@ -161,23 +166,30 @@ body {
 .work h3 {
   color: var(--primary-color);
   text-align: center;
+  text-decoration: none;
 }
 
-.work img,
-.column img {
-  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-  border: 3px solid #000;
-  width: 50vw;
+.work h3,
+footer a,
+footer h2 {
+  text-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
 
 .work img {
   margin: 0 auto;
   justify-items: center;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  border: 3px solid #000;
+  width: 50vw;
 }
 
 .row {
   margin: auto;
   width: 50%;
+}
+
+.row a {
+  text-decoration: none;
 }
 
 .column {
@@ -190,13 +202,17 @@ body {
   height: auto;
   max-width: 300px;
   max-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Contact me Section */
-.contact-me-text {
+.contact-me {
+  background-color: var(--primary-color);
+}
+.contact-me a {
   color: var(--tertiary-color);
 }
-
 .container {
   width: 50vw;
   margin: 0 auto;
@@ -211,16 +227,17 @@ body {
 
 /* FOOTER STYLES START */
 footer {
-  background: var(--tertiary-color);
+  background: var(--primary-color);
   padding: 40px 35px;
   justify-content: space-between;
   width: 100%;
 }
 
 footer h2 {
-  color: var(--primary-color);
-  font-size: 30px;
+  color: var(--tertiary-color);
+  font-size: 15px;
   margin: 0;
+  text-align: center;
 }
 
 footer div {
@@ -229,5 +246,5 @@ footer div {
 }
 
 footer a {
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
