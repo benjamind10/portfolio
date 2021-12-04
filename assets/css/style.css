@@ -17,17 +17,33 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Grouped CSS */
+.nav-bar,
+.nav-bar nav ul,
+.hero,
+.about-me,
+.work,
+.contact-me,
+.column,
+.container,
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Navbar Section */
 .nav-bar {
   padding: 20px;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
-  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  background-image: url('../images/hero_banner.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .nav-bar h1 {
@@ -48,8 +64,6 @@ body {
 }
 
 .nav-bar nav ul {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -81,9 +95,7 @@ body {
   background-image: url('../images/hero_banner.jpeg');
   background-size: cover;
   background-position: center;
-  display: flex;
   justify-content: right;
-  flex-wrap: wrap;
 }
 
 .hero-cta {
@@ -97,17 +109,19 @@ body {
 }
 
 /* About me section */
-.about-me {
-  display: flex;
-  flex-wrap: wrap;
+.about-me,
+.work,
+.contact-me {
   align-items: flex-start;
   flex-direction: column;
+  scroll-margin-top: 5rem;
 }
 
-.about-me-text {
+.about-me-text,
+.work-text,
+.contact-me-text {
   flex: 1;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   font-size: 50px;
   border-bottom: 3px solid var(--tertiary-color);
   align-self: center;
@@ -118,11 +132,6 @@ body {
 }
 
 .about-me-body {
-  flex: 3;
-  flex-grow: 6;
-}
-
-.about-me-body p {
   flex: 3;
   flex-grow: 6;
   padding-right: 140px;
@@ -138,20 +147,15 @@ body {
 /* Work Section */
 .work {
   background-color: var(--tertiary-color);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  flex-direction: column;
 }
 
 .work-text {
-  flex: 1;
   color: var(--primary-color);
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  font-size: 50px;
   border-bottom: 3px solid var(--primary-color);
-  align-self: center;
+}
+
+.work-text header {
+  color: var(--primary-color);
 }
 
 .work h3 {
@@ -159,14 +163,16 @@ body {
   text-align: center;
 }
 
-/* Card Section */
-.work img {
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
-  justify-items: center;
-  border: 3px solid #000;
+.work img,
+.column img {
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  border: 3px solid #000;
+  width: 50vw;
+}
+
+.work img {
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .row {
@@ -175,53 +181,44 @@ body {
 }
 
 .column {
-  display: flex;
   padding: 0 20vw;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .column img {
   margin: 10px;
-  border: 3px solid #000;
-  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
   height: auto;
-  width: auto;
   max-width: 300px;
   max-height: 300px;
 }
 
-/* .card {
-  display: flex;
-  flex-wrap: wrap;
+/* Contact me Section */
+.contact-me-text {
+  color: var(--tertiary-color);
+}
+
+.container {
+  width: 50vw;
   margin: 0 auto;
-  max-width: 1000px;
-  align-content: space-around;
+  justify-items: center;
+  justify-content: space-around;
 }
 
-.card .project1 {
-  display: flex;
+.container h3 {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
-
-.card img {
-  margin: 10px;
-  border: 3px solid #000;
-  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-  max-width: 25vw;
-} */
 
 /* FOOTER STYLES START */
 footer {
-  background: #46cff9;
+  background: var(--tertiary-color);
   padding: 40px 35px;
-  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 100%;
 }
 
 footer h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: 30px;
   margin: 0;
 }
@@ -232,5 +229,5 @@ footer div {
 }
 
 footer a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
