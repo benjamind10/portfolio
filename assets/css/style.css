@@ -129,7 +129,6 @@ section {
   flex: 1;
   margin-bottom: 50px;
   font-size: 2.5vw;
-  border-bottom: 3px solid var(--tertiary-color);
   align-self: center;
 }
 
@@ -149,7 +148,8 @@ section {
 }
 
 /* Work Section */
-.work {
+.work,
+.work header {
   background-color: var(--tertiary-color);
 }
 
@@ -160,10 +160,6 @@ section {
 .work-text {
   color: var(--primary-color);
   border-bottom: 3px solid var(--primary-color);
-}
-
-.work-text header {
-  color: var(--primary-color);
 }
 
 .work h3,
@@ -233,8 +229,16 @@ footer h2,
 }
 
 .container h3 {
+  padding-top: 10px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+.container img {
+  width: 2vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* FOOTER STYLES START */
