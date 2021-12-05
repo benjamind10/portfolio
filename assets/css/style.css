@@ -54,7 +54,7 @@ section {
 .nav-bar h1 {
   font-weight: bold;
   margin: 0;
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: var(--primary-color);
 }
 
@@ -76,7 +76,7 @@ section {
 .nav-bar nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1vw;
+  font-size: 1.2vw;
   text-decoration: underline;
 }
 
@@ -102,11 +102,10 @@ section {
 
 .hero-cta {
   text-align: right;
-  width: 35%;
   align-self: flex-end;
-  margin: 3.5%;
+  margin: 1.5%;
   color: var(--primary-color);
-  font-size: 25px;
+  font-size: 1.5vw;
   line-height: 1.2;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -128,8 +127,8 @@ section {
 .work-text,
 .contact-me-text {
   flex: 1;
-  margin-bottom: 15px;
-  font-size: 2vw;
+  margin-bottom: 50px;
+  font-size: 2.5vw;
   border-bottom: 3px solid var(--tertiary-color);
   align-self: center;
 }
@@ -154,6 +153,10 @@ section {
   background-color: var(--tertiary-color);
 }
 
+.work a {
+  text-decoration: none;
+}
+
 .work-text {
   color: var(--primary-color);
   border-bottom: 3px solid var(--primary-color);
@@ -163,23 +166,28 @@ section {
   color: var(--primary-color);
 }
 
-.work h3 {
+.work h3,
+.work p {
   color: var(--primary-color);
   text-align: center;
   text-decoration: none;
 }
 
+.work p {
+  font-size: 0.75vw;
+}
+
 .work h3,
 footer a,
-footer h2 {
+footer h2,
+.work p {
   text-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
 
 .work img {
-  margin: 0 auto;
   justify-items: center;
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-  border: 3px solid #000;
+  border: 3px solid var(--primary-color);
   width: 50vw;
 }
 
@@ -206,6 +214,10 @@ footer h2 {
   flex-wrap: wrap;
 }
 
+.column p {
+  color: var(--primary-color);
+}
+
 /* Contact me Section */
 .contact-me {
   background-color: var(--primary-color);
@@ -227,14 +239,14 @@ footer h2 {
 
 /* FOOTER STYLES START */
 footer {
-  background: var(--primary-color);
+  background: var(--tertiary-color);
   padding: 40px 35px;
   justify-content: space-between;
   width: 100%;
 }
 
 footer h2 {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 15px;
   margin: 0;
   text-align: center;
@@ -246,5 +258,5 @@ footer div {
 }
 
 footer a {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
 }
