@@ -15,7 +15,7 @@
 /* Element Selectors */
 body {
   color: var(--tertiary-color);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 section {
@@ -52,7 +52,6 @@ section {
 }
 
 .nav-bar h1 {
-  font-weight: bold;
   margin: 0;
   font-size: 2.5vw;
   color: var(--primary-color);
