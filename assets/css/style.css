@@ -158,7 +158,6 @@ section {
 
 .work-text {
   color: var(--primary-color);
-  border-bottom: 3px solid var(--primary-color);
 }
 
 .work h3,
@@ -169,7 +168,7 @@ section {
 }
 
 .work p {
-  font-size: 0.75vw;
+  font-size: 1em;
 }
 
 .work h3,
@@ -304,6 +303,10 @@ footer a {
 
   .container h3 {
     padding: 0 5px;
+    text-decoration-thickness: 0;
+  }
+  .work p {
+    font-size: 0.5em;
   }
 }
 
@@ -315,11 +318,12 @@ footer a {
   }
 
   .nav-bar h1 {
-    font-size: 1.5em;
+    font-size: 1em;
+    padding-top: 0.6em;
   }
 
   .nav-bar .logo {
-    width: 2.2em;
+    width: 1.5em;
   }
 
   .container h3 {
@@ -328,6 +332,12 @@ footer a {
 
   .about-me-body p {
     font-size: 0.8em;
+  }
+
+  .about-me-text,
+  .work-text,
+  .contact-me-text {
+    font-size: 2em;
   }
 }
 
