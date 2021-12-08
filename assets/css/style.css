@@ -53,7 +53,7 @@ section {
 
 .nav-bar h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 3em;
   color: var(--primary-color);
 }
 
@@ -115,7 +115,7 @@ section {
 .contact-me {
   align-items: flex-start;
   flex-direction: column;
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 3rem;
 }
 
 .about-me {
@@ -127,7 +127,7 @@ section {
 .contact-me-text {
   flex: 1;
   margin-bottom: 50px;
-  font-size: 2em;
+  font-size: 3em;
   align-self: center;
 }
 
@@ -213,6 +213,10 @@ footer h2,
   color: var(--primary-color);
 }
 
+.project1 p {
+  padding-top: 8px;
+}
+
 /* Contact me Section */
 .contact-me {
   background-color: var(--primary-color);
@@ -231,10 +235,11 @@ footer h2,
   padding-top: 10px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
+  text-align: center;
 }
 
 .container img {
-  width: 2vw;
+  width: 3.4vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -265,14 +270,17 @@ footer a {
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1130px) {
   .column {
-    padding: 0;
+    padding: 0 10em;
   }
 }
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+  .column {
+    padding: 0;
+  }
+
   .about-me-text,
   .work-text,
   .contact-me-text {
@@ -280,6 +288,45 @@ footer a {
   }
 }
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 767px) {
+  .nav-bar nav ul li a {
+    font-size: 1em;
+  }
+
+  .nav-bar h1 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .container h3 {
+    padding: 0 5px;
+  }
+}
+
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  .nav-bar nav ul li a {
+    font-size: 0.8em;
+    padding: 0 5px;
+  }
+
+  .nav-bar h1 {
+    font-size: 1.5em;
+  }
+
+  .nav-bar .logo {
+    width: 2.2em;
+  }
+
+  .container h3 {
+    font-size: 0.8em;
+  }
+
+  .about-me-body p {
+    font-size: 0.8em;
+  }
 }
