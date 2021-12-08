@@ -53,7 +53,7 @@ section {
 
 .nav-bar h1 {
   margin: 0;
-  font-size: 2.5vw;
+  font-size: 2.5em;
   color: var(--primary-color);
 }
 
@@ -75,7 +75,7 @@ section {
 .nav-bar nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.2vw;
+  font-size: 1.5em;
   text-decoration: underline;
 }
 
@@ -87,7 +87,7 @@ section {
 
 .nav-bar .logo {
   padding-right: 15px;
-  width: 3vw;
+  width: 1.5em;
 }
 
 /* Hero Section */
@@ -104,7 +104,7 @@ section {
   align-self: flex-end;
   margin: 1.5%;
   color: var(--primary-color);
-  font-size: 1.5vw;
+  font-size: 2em;
   line-height: 1.2;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -127,7 +127,7 @@ section {
 .contact-me-text {
   flex: 1;
   margin-bottom: 50px;
-  font-size: 2.5vw;
+  font-size: 2em;
   align-self: center;
 }
 
@@ -166,10 +166,6 @@ section {
   color: var(--primary-color);
   text-align: center;
   text-decoration: none;
-}
-
-.work p a {
-  color: var(--fourth-color);
 }
 
 .work p {
@@ -266,4 +262,24 @@ footer div {
 
 footer a {
   color: var(--primary-color);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  .column {
+    padding: 0;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .about-me-text,
+  .work-text,
+  .contact-me-text {
+    margin-bottom: 15px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
 }
