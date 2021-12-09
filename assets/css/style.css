@@ -55,6 +55,7 @@ section {
   margin: 0;
   font-size: 3em;
   color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-bar a {
@@ -224,7 +225,7 @@ footer h2,
   color: var(--tertiary-color);
 }
 .container {
-  width: 50vw;
+  width: 80vw;
   margin: 0 auto;
   justify-items: center;
   justify-content: space-around;
@@ -233,12 +234,12 @@ footer h2,
 .container h3 {
   padding-top: 10px;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  font-size: 1.3em;
   text-align: center;
 }
 
 .container img {
-  width: 3.4vw;
+  width: 2.5vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -254,7 +255,7 @@ footer {
 
 footer h2 {
   color: var(--primary-color);
-  font-size: 15px;
+  font-size: 1.2em;
   margin: 0;
   text-align: center;
 }
@@ -288,7 +289,7 @@ footer a {
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
   .nav-bar nav ul li a {
     font-size: 1em;
   }
@@ -297,16 +298,23 @@ footer a {
     font-size: 1.5em;
   }
 
+  .nav-bar .logo {
+    width: 1.5em;
+  }
+
   .container {
     flex-wrap: nowrap;
   }
 
   .container h3 {
     padding: 0 5px;
-    text-decoration-thickness: 0;
   }
   .work p {
     font-size: 0.5em;
+  }
+
+  .column img {
+    max-width: 250px;
   }
 }
 
@@ -323,13 +331,10 @@ footer a {
   }
 
   .nav-bar .logo {
-    width: 1.5em;
+    width: 2.5em;
   }
 
-  .container h3 {
-    font-size: 0.8em;
-  }
-
+  .container h3,
   .about-me-body p {
     font-size: 0.8em;
   }
@@ -338,6 +343,15 @@ footer a {
   .work-text,
   .contact-me-text {
     font-size: 2em;
+  }
+
+  .hero-cta {
+    font-size: 1.5em;
+    padding-right: 35px;
+  }
+
+  .column img {
+    max-width: 120px;
   }
 }
 
