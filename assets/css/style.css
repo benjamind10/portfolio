@@ -201,12 +201,11 @@ footer h2,
 }
 
 .column img {
-  margin: 10px;
-  height: auto;
+  margin: 20px;
   max-width: 300px;
-  max-height: 300px;
-  display: flex;
-  flex-wrap: wrap;
+  max-height: 95px;
+  width: auto;
+  height: auto;
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
