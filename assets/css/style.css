@@ -217,6 +217,16 @@ footer h2,
   padding-top: 8px;
 }
 
+.project-text-link {
+  text-align: center;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: white;
+}
+
 /* Contact me Section */
 .contact-me {
   background-color: var(--primary-color);
