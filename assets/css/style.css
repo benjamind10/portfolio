@@ -110,6 +110,10 @@ section {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* About me section */
 .about-me,
 .work,
