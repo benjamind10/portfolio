@@ -200,20 +200,24 @@ footer h2,
 }
 
 .column {
-  padding: 0 20vw;
+  padding: 0 10vw;
   justify-content: center;
   display: flex;
+  flex-direction: row;
 }
 
 .column img {
   max-width: 200px;
   max-height: 95px;
-  margin-left: 37%;
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 .column p {
   color: var(--primary-color);
+  width: 300px;
+}
+.project {
+  text-align: center;
 }
 
 .project p {
@@ -227,7 +231,7 @@ footer h2,
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 /* Contact me Section */
