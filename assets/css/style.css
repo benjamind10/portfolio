@@ -286,6 +286,8 @@ footer a {
   color: var(--primary-color);
 }
 
+/* Burger Menu */
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1130px) {
   .column {
