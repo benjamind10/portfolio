@@ -57,6 +57,7 @@ section {
   font-size: 3em;
   color: var(--primary-color);
   font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
 }
 
 .nav-bar a {
