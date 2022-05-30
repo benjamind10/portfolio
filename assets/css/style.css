@@ -49,6 +49,7 @@ section {
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
+  z-index: 9999;
 }
 
 .nav-bar h1 {
@@ -155,6 +156,20 @@ html {
 .work,
 .work header {
   background-color: var(--tertiary-color);
+}
+
+.project-image {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.project-image:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
 }
 
 .work a {
