@@ -4,3 +4,7 @@ function mobileMenu() {
 }
 
 $('.hamburger').click(mobileMenu);
+
+$('.nav-link').click(function () {
+  $('.nav-menu').toggleClass('active');
+});
