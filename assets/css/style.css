@@ -173,7 +173,7 @@ html {
 .contact-me {
   align-items: flex-start;
   flex-direction: column;
-  scroll-margin-top: 3rem;
+  scroll-margin-top: 4rem;
 }
 
 .about-me {
