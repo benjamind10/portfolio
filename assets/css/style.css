@@ -52,13 +52,9 @@ section {
   z-index: 9999;
 }
 
-.log-heading {
-  margin-bottom: 4px;
-}
-
-.nav-bar h1 {
+.nav-bar span {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.5em;
   color: var(--primary-color);
   font-family: 'Roboto', sans-serif;
   margin-top: 15px;
@@ -114,7 +110,7 @@ section {
 }
 
 .nav-logo {
-  font-size: 2.1rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #482ff7;
 }
@@ -144,7 +140,7 @@ section {
 
 .nav-bar .logo {
   padding-right: 15px;
-  width: 1.5em;
+  padding-left: 5px;
 }
 
 /* Hero Section */
