@@ -226,12 +226,12 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        function mobileMenu() {
+        function mobileMenuHandler() {
             $('.hamburger').toggleClass('active');
             $('.nav-menu').toggleClass('active');
         }
 
-        $('.hamburger').click(mobileMenu);
+        $('.hamburger').click(mobileMenuHandler);
 
         $('.nav-link').click(function () {
             $('.nav-menu').toggleClass('active');
