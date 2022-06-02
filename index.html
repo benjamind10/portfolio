@@ -225,7 +225,18 @@
         <h2>Proudly Made by <a href="mailto:ben@bytebug.io">bejamind10</a></h2>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script>
+        function mobileMenu() {
+            $('.hamburger').toggleClass('active');
+            $('.nav-menu').toggleClass('active');
+        }
+
+        $('.hamburger').click(mobileMenu);
+
+        $('.nav-link').click(function () {
+            $('.nav-menu').toggleClass('active');
+        });
+    </script>
 </body>
 
 </html>

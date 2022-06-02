@@ -82,7 +82,7 @@ section {
 .bar {
   display: block;
   width: 25px;
-  height: 3px;
+  height: 4px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -379,8 +379,8 @@ footer a {
     font-size: 2em;
   }
 
-  .nav-bar h1 {
-    font-size: em;
+  .nav-bar span {
+    font-size: 1.5em;
   }
 
   .nav-bar .logo {
@@ -435,12 +435,6 @@ footer a {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .nav-bar nav ul li a {
-    font-size: 0.5em;
-  }
-}
-
 @media only screen and (max-width: 1000px) {
   .nav-menu {
     position: fixed;
@@ -466,6 +460,7 @@ footer a {
   .hamburger {
     display: block;
     cursor: pointer;
+    padding-right: 10px;
   }
   .nav-item a {
     color: black;
